@@ -22,10 +22,8 @@ class Solution:
                 node = q.popleft()
                 if node:
                     level.append(node.val)
-                    if node.left:
-                        q.append(node.left)
-                    if node.right:
-                        q.append(node.right)
+                    q.append(node.left)
+                    q.append(node.right)
             if level:
                 result.append(level)
         return result
