@@ -6,7 +6,7 @@ class Solution:
         
         for window_end, letter in enumerate(s):
             if letter in hash:
-                while letter in hash and window_start < window_end:
+                while letter in hash:
                     del hash[s[window_start]]
                     window_start += 1
             hash[letter] = 1
