@@ -12,5 +12,5 @@ class Solution:
             current.next = previous
             previous = current
             current = next
-            
+        
         return previous
