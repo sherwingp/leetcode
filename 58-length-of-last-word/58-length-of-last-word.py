@@ -14,6 +14,3 @@ class Solution:
                     return window_end - window_start
             
             window_start -= 1
-            
-        return 1
-            
