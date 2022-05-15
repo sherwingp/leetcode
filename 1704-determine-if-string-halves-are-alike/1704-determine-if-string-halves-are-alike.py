@@ -5,13 +5,13 @@ class Solution:
         a_vowels = 0
         b_vowels = 0
         
-        s = s.lower()
-        
+        vowels = 'aeiouAEIOU'
+    
         while l < r:
-            if s[l] in ('a', 'e', 'i', 'o', 'u'):
+            if s[l] in vowels:
                 a_vowels += 1
             
-            if s[r] in ('a', 'e', 'i', 'o', 'u'):
+            if s[r] in vowels:
                 b_vowels += 1
         
             l += 1
